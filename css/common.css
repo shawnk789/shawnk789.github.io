@@ -1247,7 +1247,7 @@ header .inner .navArea .menuInfo .nav > li > a:hover, header .inner .menu:hover,
   align-items: center;
 }
 
-header .inner, header .inner .open .inner, header .inner .open .btm, .pageContents .inner, footer .inner, #topContentsBg #about .inner, #contact .inner, #company .inner {
+header .inner, header .inner .open .inner, header .inner .open .btm, .pageContents .inner, footer .inner, #topContentsBg #about .inner, #contact .inner, #company .inner,#member .inner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -1257,7 +1257,7 @@ header .inner, header .inner .open .inner, header .inner .open .btm, .pageConten
 }
 
 @media screen and (max-width: 768px) {
-  header .inner, header .inner .open .inner, header .inner .open .btm, .pageContents .inner, footer .inner, #topContentsBg #about .inner, #contact .inner, #company .inner {
+  header .inner, header .inner .open .inner, header .inner .open .btm, .pageContents .inner, footer .inner, #topContentsBg #about .inner, #contact .inner, #company .inner,#member .inner {
     padding: 0 30px;
   }
 }
@@ -1351,7 +1351,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: #102C5A;
   font-family: "Times New Roman", serif;
   font-weight: 500;
   color: #ffffff;
@@ -1776,16 +1776,26 @@ footer {
 
 footer .inner .logo {
   font-size: 0;
-  line-height: 0;
+  /* line-height: 0; */
 }
 
 footer .inner .logo > a > img {
   width: 210px;
 }
+footer .inner .logo > .comment{
+  font-size: 12px;
+  padding-top: 5px;
+  font-weight: normal;
+  width: 210px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   footer .inner .logo > a > img {
-    width: 130px;
+    width: 150px;
+  }
+  footer .inner .logo > .comment{
+    width: 150px;;
   }
 }
 
@@ -2027,22 +2037,34 @@ footer .inner .infoList .copy {
     width: 30px;
   }
 }
-
+#about table{
+  margin-top:50px;
+}
+#about table td{
+  border:1px solid #fff;
+  text-align: center;
+  padding: 10px 5px;
+  vertical-align: middle;
+}
 /* ====================================== member */
+#member{
+  padding-top: 50px;
+}
 #member .infoDetail {
   background: #102C5A;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  /* -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; */
   -webkit-transition: background-color 0.8s ease-in-out;
   -o-transition: background-color 0.8s ease-in-out;
   transition: background-color 0.8s ease-in-out;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -2091,7 +2113,7 @@ footer .inner .infoList .copy {
 
 #member .infoDetail .detail {
   width: 50%;
-  padding: 0 5%;
+  padding: 2% 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2109,7 +2131,7 @@ footer .inner .infoList .copy {
   justify-content: center;
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   #member .infoDetail .detail {
     padding: 0 4%;
   }
@@ -2119,12 +2141,12 @@ footer .inner .infoList .copy {
   #member .infoDetail .detail {
     padding: 0 3%;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   #member .infoDetail .detail {
     width: 100%;
-    padding: 50px 30px;
+    /* padding: 50px 30px; */
     display: block;
   }
 }
@@ -2328,13 +2350,13 @@ footer .inner .infoList .copy {
   }
 }
 
-#contact .inner > h2 {
+#contact .inner > h2,#member .inner > h2 {
   width: 100%;
   max-width: 520px;
   border-bottom: 1px solid #ffffff;
 }
 
-#contact .inner > h2 > a {
+#contact .inner > h2 > a ,#member .inner > h2 > a {
   padding: 20px 0;
   display: block;
   font-size: 40px;
@@ -2342,7 +2364,7 @@ footer .inner .infoList .copy {
 }
 
 @media screen and (max-width: 768px) {
-  #contact .inner > h2 > a {
+  #contact .inner > h2 > a,#member .inner > h2 > a {
     padding: 10px 0;
     font-size: 24px;
   }
@@ -2357,7 +2379,18 @@ footer .inner .infoList .copy {
   font-size: 14px;
   line-height: 1.4;
 }
-
+#company .qcode{
+  width: 150px;
+}
+#company .qcode img{
+  width: 100%;
+}
+#company .qcode > p{
+  font-size: 12px;
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   #company .inner > dl {
     font-size: 12px;
