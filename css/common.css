@@ -2055,6 +2055,7 @@ footer .inner .infoList .copy {
   overflow: auto;
   margin-top:50px;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-overflow-scrolling: touch;
 }
 #about .see-all{
   font-size: 12px;
