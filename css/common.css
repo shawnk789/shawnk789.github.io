@@ -1228,7 +1228,7 @@ header .inner .navArea .menuInfo .nav > li > a:hover, header .inner .menu:hover,
 }
 
 #topContentsBg #kv .inner {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1244,7 +1244,7 @@ header .inner .navArea .menuInfo .nav > li > a:hover, header .inner .menu:hover,
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 header .inner, header .inner .open .inner, header .inner .open .btm, .pageContents .inner, footer .inner, #topContentsBg #about .inner, #contact .inner, #company .inner,#member .inner {
@@ -1893,7 +1893,7 @@ footer .inner .infoList .copy {
   background-image: url(../images/top_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: 53% 0;
 }
 
 #topContentsBg #kv {
@@ -1928,6 +1928,8 @@ footer .inner .infoList .copy {
 @media screen and (max-width: 768px) {
   #topContentsBg #kv .inner .logo {
     width: 80%;
+    margin-bottom: 25%;
+
   }
 }
 
@@ -2032,20 +2034,53 @@ footer .inner .infoList .copy {
   display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
-  #topContentsBg #about .inner .more > span > a:after {
-    width: 30px;
-  }
-}
+
 #about table{
-  margin-top:50px;
+  min-width: 100%;
 }
 #about table td{
   border:1px solid #fff;
   text-align: center;
-  padding: 10px 5px;
   vertical-align: middle;
+  white-space:nowrap;
+  line-height: 1.2;
+  padding: 2px 5px;
+  padding: 5px 5px;
 }
+#about table tfoot td{
+  text-align: left;
+}
+#about .table-content{
+  width: 100%;
+  overflow: auto;
+  margin-top:50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#about .see-all{
+  font-size: 12px;
+  padding-top: 4px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #topContentsBg #about .inner .more > span > a:after {
+    width: 30px;
+  }
+  #about table{
+    min-width: 768px;
+  }
+  #about table td{
+    padding: 2px 5px;
+    font-size: 12px;
+
+  }
+  #about .table-content{
+    margin-top:10px;
+  }
+  #about .see-all{
+    display: block;
+  }
+}
+
 /* ====================================== member */
 #member{
   padding-top: 50px;
