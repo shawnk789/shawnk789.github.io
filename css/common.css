@@ -2451,18 +2451,23 @@ footer .inner .infoList .copy {
   width: 100%;
   text-align: center;
 }
-#company .qcode > p:first-child{
+#company .qcode > p:first-child,#company .qcode > p:nth-of-type(2){
   text-align: left;
   padding-bottom: 20px;
   font-size: 22px;
 }
-#company .mail{
+#company .mail,#company .Add{
   padding-top: 40px;
 }
 #company .mail >p{
   font-size: 22px;
   padding-bottom: 10px;
 }
+#company .Add >p{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
   #company .inner > dl {
