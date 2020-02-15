@@ -2451,10 +2451,16 @@ footer .inner .infoList .copy {
   width: 100%;
   text-align: center;
 }
-#company .qcode > p:first-child,#company .qcode > p:nth-of-type(2){
+#company .qcode > p:first-child{
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 22px;
+}
+#company .qcode > p:nth-of-type(2){
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 0;
+  font-size: 12px;
 }
 #company .mail,#company .Add{
   padding-top: 40px;
@@ -2466,6 +2472,9 @@ footer .inner .infoList .copy {
 #company .Add >p{
   font-size: 22px;
   padding-bottom: 10px;
+}
+#company .Add >p:nth-of-type(2){
+  font-size: 12px;
 }
 
 
